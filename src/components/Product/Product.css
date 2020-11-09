@@ -1,0 +1,23 @@
+.product {
+    border:2px solid black;
+    width: 40vh;
+    height:40vh;
+    padding: 10px;
+    margin: 5px;
+    box-shadow: 5px 10px gray;
+    align-items: center;
+}
+
+.product__info {
+    display: flex;
+    flex-direction: column;
+}
+
+.product__card {
+}
+
+.product__img {
+    margin:10px;
+    height:120px;
+    width: 70px;
+}
