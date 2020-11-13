@@ -26,16 +26,15 @@
     margin-bottom: 15px;
 }
 
+.product__button {
+    border: 1px solid;
+}
+
+.product__price {
+    margin-top: 5px;
+}
+
 .product__info {
-    display: flex;
-    flex-direction: column;
-}
-
-.product__card {
-}
-
-.product__img {
-    margin:10px;
-    height:120px;
-    width: 70px;
+    height: 100px;
+    margin-bottom: 15px;
 }

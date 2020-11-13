@@ -30,15 +30,16 @@
 }
 
 .header__searchInput {
-    height: 12px;
-    padding: 10px;
+    height: 30px;
+    padding: 5px;
     border: none;
     width:100%;
 }
 
 .header__searchIcon {
     padding: 5px;
-    height: 22px !important;
+    height: 30px !important;
+    width: 30px !important;
     background-color: #cd9042;
 }
 
