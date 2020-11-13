@@ -19,18 +19,48 @@ const Home = () => {
                     alt="Join Prime"
                 />
                 <div className="home__row">
-                    <Product />
-                    <Product />
+                    <Product
+                        title="Think Like a Monk"
+                        image="https://images-na.ssl-images-amazon.com/images/I/81s6DUyQCZL.jpg"
+                        price={309}
+                        rating={5}
+                    />
+                    <Product
+                        title="Samsung Galaxy M31s (Mirage Blue, 6GB RAM, 128GB Storage)"
+                        image="https://images-na.ssl-images-amazon.com/images/I/61d-phh4GfL._SL1500_.jpg"
+                        price={18499}
+                        rating={4}
+                    />
                 </div>
                 <div className="home__row">
-                    <Product />
-                    <Product />
-                    <Product />
+                    <Product
+                        title="Safari 77 cms Black Hardsided Luggage"
+                        image="https://images-na.ssl-images-amazon.com/images/I/61%2BnWHOURiL._SL1500_.jpg"
+                        price={2999}
+                        rating={4}
+                    />
+                    <Product
+                        title="Apple Macbook Pro (16inch, Intel core i7)"
+                        image="https://images-na.ssl-images-amazon.com/images/I/71L2iBSyyOL._SL1500_.jpg"
+                        price={172899}
+                        rating={5}
+                    />
+                    <Product
+                        title="Cadbury Celebrations Chocolate Gift Pack, 281 g"
+                        image="https://images-na.ssl-images-amazon.com/images/I/71WiyzH504L._SL1500_.jpg"
+                        price={300}
+                        rating={5}
+                    />
                 </div>
                 <div className="home__row">
-                    <Product />
+                    <Product
+                        title="Amazon Brand - Solimo 12-inch Wall Clock - Classic Roulette"
+                        image="https://images-na.ssl-images-amazon.com/images/I/81XEPquUw3L._SL1500_.jpg"
+                        price={599}
+                        rating={4}
+                    />
                 </div>
-        </div>
+            </div>
         </div >
     )
 }

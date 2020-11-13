@@ -4,20 +4,20 @@ import Col from 'react-bootstrap/Col'
 
 import './Product.css'
 
-const Product = () => {
+const Product = ({title, image, price, rating}) => {
     return (
         <div className="product">
             <div className="product__info">
-                <div>The Lean Startup</div>
+                <div>{title}</div>
                 <div className="product__price">
-                    <small>$</small>
-                    <strong>19.99</strong>
+                    <small>Rs.</small>
+    <strong>{price}</strong>
                 </div>
                 <div className="product__rating">
-                    &#9733;&#9733;&#9733;&#9733;
+                    {Array(rating).fill().map((_,i) => <div>&#9733;</div>)}
                 </div>
             </div>
-            <img className="product__img" src="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg" alt="" /> <br />
+            <img className="product__img" src={image} alt="" /> <br />
             <Button className="product__button" variant="warning" size="sm">Add to cart</Button>
         </div>
     )
