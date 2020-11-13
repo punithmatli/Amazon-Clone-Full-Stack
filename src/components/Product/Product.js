@@ -1,6 +1,5 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
-import Col from 'react-bootstrap/Col'
 
 import './Product.css'
 
@@ -14,7 +13,7 @@ const Product = ({title, image, price, rating}) => {
     <strong>{price}</strong>
                 </div>
                 <div className="product__rating">
-                    {Array(rating).fill().map((_,i) => <div>&#9733;</div>)}
+                    {Array(rating).fill().map((_,i) => <div key={i}>&#9733;</div>)}
                 </div>
             </div>
             <img className="product__img" src={image} alt="" /> <br />

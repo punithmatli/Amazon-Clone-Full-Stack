@@ -20,12 +20,14 @@ const Home = () => {
                 />
                 <div className="home__row">
                     <Product
+                        id="65123"
                         title="Think Like a Monk"
                         image="https://images-na.ssl-images-amazon.com/images/I/81s6DUyQCZL.jpg"
                         price={309}
                         rating={5}
                     />
                     <Product
+                        id="52323"
                         title="Samsung Galaxy M31s (Mirage Blue, 6GB RAM, 128GB Storage)"
                         image="https://images-na.ssl-images-amazon.com/images/I/61d-phh4GfL._SL1500_.jpg"
                         price={18499}
@@ -34,18 +36,21 @@ const Home = () => {
                 </div>
                 <div className="home__row">
                     <Product
+                        id="76234"
                         title="Safari 77 cms Black Hardsided Luggage"
                         image="https://images-na.ssl-images-amazon.com/images/I/61%2BnWHOURiL._SL1500_.jpg"
                         price={2999}
                         rating={4}
                     />
                     <Product
+                        id="75465"
                         title="Apple Macbook Pro (16inch, Intel core i7)"
                         image="https://images-na.ssl-images-amazon.com/images/I/71L2iBSyyOL._SL1500_.jpg"
                         price={172899}
                         rating={5}
                     />
                     <Product
+                        id="21134"
                         title="Cadbury Celebrations Chocolate Gift Pack, 281 g"
                         image="https://images-na.ssl-images-amazon.com/images/I/71WiyzH504L._SL1500_.jpg"
                         price={300}
@@ -54,6 +59,7 @@ const Home = () => {
                 </div>
                 <div className="home__row">
                     <Product
+                        id="79934"
                         title="Amazon Brand - Solimo 12-inch Wall Clock - Classic Roulette"
                         image="https://images-na.ssl-images-amazon.com/images/I/81XEPquUw3L._SL1500_.jpg"
                         price={599}
