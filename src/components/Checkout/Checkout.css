@@ -1,0 +1,39 @@
+.checkout {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    height: max-content;
+}
+
+.checkout__ad {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.checkout__title {
+    padding: 10px;
+    border-bottom: 1px solid lightgray;
+    margin-right: 10px;
+}
+
+.checkout__left {
+    flex: 2;
+    margin: 10px;
+}
+ 
+.checkout__right {
+    margin: 10px 10px 10px 0;
+    /* border: 1px solid; */
+    flex: 1;
+    background-color: rgb(234,237,237);
+    padding:20px 20px 20px 20px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+@media (max-width : 500px) {
+    .checkout {
+        flex-direction: column;
+    }
+}

@@ -62,11 +62,17 @@
 
 .header__optionBasket {
     display: flex;
+    flex-direction: row;
     align-items: center;
     color: white;
 }
 
+.header__optionBasketIcon {
+    color: white;
+} 
+
 .header__basketCount {
+    color: white;
     margin-right: 10px;
     margin-left: 10px;
 }
