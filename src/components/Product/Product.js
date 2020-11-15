@@ -1,9 +1,27 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 
+import {useStateValue} from '../StateProvider/StateProvider'
 import './Product.css'
 
-const Product = ({title, image, price, rating}) => {
+const Product = ({id, title, image, price, rating}) => {
+    const [{basket}, dispatch] = useStateValue();
+
+    console.log("This is how basket looks -----> ",basket)
+
+    const addToBasket = () => {
+        dispatch({
+            type:"ADD_TO_BASKET",
+            item:{
+                id,
+                title,
+                image,
+                price,
+                rating
+            }
+        })
+    }
+
     return (
         <div className="product">
             <div className="product__info">
@@ -17,7 +35,7 @@ const Product = ({title, image, price, rating}) => {
                 </div>
             </div>
             <img className="product__img" src={image} alt="" /> <br />
-            <Button className="product__button" variant="warning" size="sm">Add to cart</Button>
+            <Button onClick={addToBasket} className="product__button" variant="warning" size="sm">Add to cart</Button>
         </div>
     )
 }
