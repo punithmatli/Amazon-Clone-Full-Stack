@@ -18,14 +18,14 @@ const Checkout = () => {
                 />
 
                 <h3 className="checkout__title">Your shopping cart</h3>
-                <CheckoutProduct
+                {/* <CheckoutProduct
                     id={2}
                     key={2}
                     title={"lorem ipsum lorem ipsum lorem ipsum lorem ipsumkjsanfoasiofjioasjfioja"}
                     image={"https://images-na.ssl-images-amazon.com/images/I/81s6DUyQCZL.jpg"}
                     rating={4}
                     price={1999}
-                />
+                /> */}
                 {basket.map((item) =>
                     <CheckoutProduct
                         id={item.id}

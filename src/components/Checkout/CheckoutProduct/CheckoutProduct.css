@@ -4,8 +4,8 @@
 }
 
 .checkoutProduct__image {
-    width: 180px;
-    height: 180px;
+    width: 160px;
+    height: 160px;
     object-fit: contain;
 }
 
@@ -23,4 +23,9 @@
 
 .checkoutProduct__rating {
     display: flex;
+}
+
+.checkoutProduct__title {
+    font-size: 17px;
+    font-weight: 700;
 }

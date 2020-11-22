@@ -1,5 +1,4 @@
 import React from 'react';
-import Button from 'react-bootstrap/esm/Button';
 
 import './CheckoutProduct.css'
 
@@ -11,7 +10,7 @@ const CheckoutProduct = ({title, image, id, price, rating}) =>
                 <div>&#x20B9;{price}</div>
                 <div className="checkoutProduct__rating">{
                     Array(rating).fill().map((_,i) => <div>&#9733;</div>)
-                }</div>
+                }</div><br />
                 <button className="checkoutProduct__button">Remove from cart</button>    
             </div>
         </div>
