@@ -1,18 +1,16 @@
 import React from 'react';
 import Button from 'react-bootstrap/Button'
 
-import {useStateValue} from '../StateProvider/StateProvider'
+import { useStateValue } from '../StateProvider/StateProvider'
 import './Product.css'
 
-const Product = ({id, title, image, price, rating}) => {
-    const [{basket}, dispatch] = useStateValue();
-
-    console.log("This is how basket looks -----> ",basket)
+const Product = ({ id, title, image, price, rating }) => {
+    const [{ basket }, dispatch] = useStateValue();
 
     const addToBasket = () => {
         dispatch({
-            type:"ADD_TO_BASKET",
-            item:{
+            type: "ADD_TO_BASKET",
+            item: {
                 id,
                 title,
                 image,
@@ -28,10 +26,10 @@ const Product = ({id, title, image, price, rating}) => {
                 <div>{title}</div>
                 <div className="product__price">
                     <small>&#x20B9;</small>
-    <strong>{price}</strong>
+                    <strong>{price}</strong>
                 </div>
                 <div className="product__rating">
-                    {Array(rating).fill().map((_,i) => <div key={i}>&#9733;</div>)}
+                    {Array(rating).fill().map((_, i) => <div key={i}>&#9733;</div>)}
                 </div>
             </div>
             <img className="product__img" src={image} alt="" /> <br />
